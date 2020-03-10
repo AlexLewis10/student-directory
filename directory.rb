@@ -3,9 +3,6 @@
 def input_students
   puts "Please enter the names of the students"
   puts "To finish, just hit return twice"
-  # create an empty array
-  #students = []
-  # get the first name
   name = STDIN.gets.chomp
   # while the name is not empty, repeat this code
   while !name.empty? do
@@ -15,7 +12,6 @@ def input_students
     # get another name from the user
     name = STDIN.gets.chomp
   end
-  # return the array of students
 end
 
 def print_header
@@ -29,10 +25,9 @@ def print_student_list
   end
 end
 
-def print_footer#(student)
+def print_footer
   puts "Overall, we have #{@students.count} great students"
 end
-#nothing happens until we call these methods
 
 def interactive_menu
   loop do
